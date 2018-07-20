@@ -1,6 +1,6 @@
 ## Lesson 1
 
-<br><br>
+<br>
 ### Layers
 
 + Cocoa Touch
@@ -29,7 +29,7 @@
   + Sockets - File System
   + Security - Bonjour
 
-<br><br>
+<br>
 ### Platform Components
 
 + Tools 
@@ -46,3 +46,25 @@
   + Core Motion
 + Design Strategy
   + MVC
+
+<br>
+## Lesson 2
+
+<br>
+### MVC
+_Object-Oriennted Design Pattern_
+
++ Model
+> What your application is(but not how it is displayed)
+
++ View
+> Your Controller's minions
+
++ Controller
+> How your Model is presented to the user
+
+<br>
+### Continuation of Concentration Demo
+_Use MVC to make out Concentration game a lot smarter_  
+_Creating our ownn data structures(Concentration and Card)_
+_Initialization_
