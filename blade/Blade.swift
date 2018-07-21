@@ -11,7 +11,7 @@ import Foundation
 class Blade {
     var cards = [Card]()
     
-    var indexOfOneAndOnlyFaceUpCard: Int?
+    var indexOfOneAndOnlyFaceUpCard: Int?;
     
     func chooseCard(at index: Int) {
         if !cards[index].isMatched {
@@ -39,6 +39,12 @@ class Blade {
             let card = Card();
             cards += [card, card];
         }
-        // TODO: Shuffle the cards
+        // Shuffle
+        for index in 1...numberOfPairsOfCards {
+            let rand = Int(arc4random_uniform(UInt32(cards.count)));
+            let tmp = cards[index];
+            cards[index] = cards[rand];
+            cards[rand] = tmp;
+        }
     }
 }
