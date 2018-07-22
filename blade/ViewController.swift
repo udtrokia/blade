@@ -14,7 +14,12 @@ import UIKit
 class ViewController: UIViewController {
 // ViewController => link UI layer name, if you want change, change both of them
 // UIViewController father class
-    lazy var game = Blade(numberOfPairsOfCards: (cardButtons.count + 1) / 2)
+    
+    var numberOfParisOfCards: Int {
+        return (cardButtons.count + 1) / 2;
+    }
+    
+    lazy var game = Blade(numberOfPairsOfCards: numberOfParisOfCards);
     
     var flipCount = 0 {
         didSet {
